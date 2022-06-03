@@ -1,5 +1,7 @@
 :root {
   --color-primary: #fcdf34;
+  --color-secondary: rgb(37, 37, 255);
+  --color-accent-light: rgb(68, 68, 255);
 }
 
 html {
@@ -42,4 +44,29 @@ body {
 .fact__content {
   background: var(--color-primary);
   padding: 3rem;
+}
+
+.fact__buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn { 
+  background: var(--color-secondary);
+  cursor: grab;
+  font-family: "Bungee Inline", cursive;
+  font-size: 2rem;
+  border: none;
+  color: white;
+  box-shadow: 4px 4px black;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.btn:hover {
+  background: var(--color-accent-light);
+  transform: scale(1.1);
+
 }
